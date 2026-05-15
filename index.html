@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="om">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom Clone App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="lobby-container">
+        <h2>Walga'ii Keessa Seeni (Join Meeting)</h2>
+        <div id="form-container">
+            <input type="text" id="room-name" placeholder="Maqaa Kutaa (Room Name)..." required>
+            <button id="join-btn">Seeni (Join)</button>
+        </div>
+    </div>
+
+    <div id="video-container" style="display: none;">
+        <div id="video-streams">
+            <!-- Vidiyoon asitti argama -->
+        </div>
+
+        <div id="controls-container">
+            <button class="control-btn" id="mic-btn">Mic On</button>
+            <button class="control-btn" id="camera-btn">Camera On</button>
+            <button class="control-btn" id="leave-btn" style="background-color: red;">Ba'i (Leave)</button>
+        </div>
+    </div>
+
+    <!-- Agora Web SDK faayidaarra oolchuf -->
+    <script src="https://download.agora.io/sdk/release/AgoraRTC_N-4.11.0.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
